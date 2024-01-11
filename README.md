@@ -1,0 +1,1 @@
+Pagina oficial de Trauma Corp, recuerda entrar al server de discord para estar mejor informado https://discord.gg/PJhx9cYYsD.
