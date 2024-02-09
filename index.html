@@ -12,6 +12,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #2c3e50; /* Fondo gris oscuro */
+            color: #ecf0f1; /* Texto blanco */
         }
 
         #video-background {
@@ -26,12 +28,10 @@
             z-index: -1;
         }
 
-        /* El resto de tu estilo sigue aquí... */
-
         header,
         section,
         footer {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(0, 0, 0, 0.7); /* Negro semi-transparente */
             padding: 20px;
             border-radius: 10px;
             margin: 20px;
@@ -40,14 +40,11 @@
 
         header {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7); /* Negro semi-transparente */
         }
 
         footer {
-            margin-top: auto; /* Coloca el pie de página al final */
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
+            margin-top: auto;
         }
 
         img {
@@ -57,6 +54,14 @@
             margin: 20px auto;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        a, button {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover, button:hover {
+            color: #135623; /* Cambio de color al pasar el mouse */
         }
     </style>
 </head>
@@ -71,12 +76,12 @@
 
     <!-- Aqui esta el faq de la pagina web -->
 
-    <!-- El resto de tu contenido HTML sigue aquí... -->
+    <!-- Resto de tu contenido HTML -->
 
     <!-- Botones y contenido después del video -->
     <section>
         <h2>FAQ(Preguntas Frecuentes)</h2>
-        <ul style="list-style-type: disc; color: gray;">
+        <ul style="list-style-type: disc; color: #7f8c8d;">
             <li>
                 <button onclick="location.href='https://tylersv.github.io/Trauma-FAQ/'">FAQ</button>
             </li>
@@ -92,7 +97,7 @@
     <!-- Aqui estan los botones que redirigen a los contactos -->
     <section>
         <h2>Contactos</h2>
-        <ul style="list-style-type: disc; color: gray;">
+        <ul style="list-style-type: disc; color: #7f8c8d;">
             <li>
                 <a href="https://discord.gg/PJhx9cYYsD">Discord</a>
             </li>
