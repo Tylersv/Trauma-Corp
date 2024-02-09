@@ -9,45 +9,43 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
-            background-image: url('fondo.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
-            background-size: cover;
-            background-position: center;
-            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        /* El resto de tu estilo sigue aquí... */
+
+        header,
+        section,
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            z-index: 1;
         }
 
         header {
             text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el encabezado */
+            background-color: rgba(0, 0, 0, 0.7);
             color: #fff;
         }
 
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para las secciones */
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            line-height: 1.5;
-            color: #666;
-        }
-
-        ul {
-            color: #666;
-        }
-
         footer {
-            margin-top: 50px;
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el pie de página */
+            margin-top: auto; /* Coloca el pie de página al final */
+            background-color: rgba(0, 0, 0, 0.7);
             color: #fff;
         }
 
@@ -55,14 +53,16 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto; /* Espaciado alrededor de las imágenes */
+            margin: 20px auto;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sutil sombra alrededor de las imágenes */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <!--Texto de bienvenida  -->
+
+    <!-- Resto de tu contenido HTML -->
+
     <header>
         <h1>Project Zomboid - Trauma Corp</h1>
         <p>Pagina oficial del servidor de Project zomboid TraumaSCL.</p>
@@ -70,43 +70,56 @@
 
     <!-- Aqui esta el faq de la pagina web -->
 
+    <!-- El resto de tu contenido HTML sigue aquí... -->
+
+    <!-- Botones y contenido después del video -->
     <section>
         <h2>FAQ(Preguntas Frecuentes)</h2>
         <ul style="list-style-type: disc; color: gray;">
             <li>
                 <button onclick="location.href='https://tylersv.github.io/Trauma-FAQ/'">FAQ</button>
-           </li>
+            </li>
         </ul>
     </section>
 
-<!-- Texto de pagina en progreso -->
+    <!-- Texto de pagina en progreso -->
     <section>
         <h2>Pagina en progreso</h2>
         <p>La pagina se encuentra actualmente en construcción, aunque aun asi tenemos algunas funcionalidades para ti..</p>
     </section>
-<!-- Aqui estan los botones que redirigen a los contactos -->
-<section>
-    <h2>Contactos</h2>
-    <ul style="list-style-type: disc; color: gray;">
-        <li>
-            <a href="https://discord.gg/PJhx9cYYsD">Discord</a>
-        </li>
-        <li>
-            <a href="https://pzservers.com/s/traumascl-chile-semi-rol-pvp">Votar por el servidor</a>
-        </li>
-        <li>
-            <a href="https://discord.gg/jBUCXWtN?event=1191872274219933736">Limpieza de Knox</a>
-        </li>
-    </ul>
-</section>
+
+    <!-- Aqui estan los botones que redirigen a los contactos -->
+    <section>
+        <h2>Contactos</h2>
+        <ul style="list-style-type: disc; color: gray;">
+            <li>
+                <a href="https://discord.gg/PJhx9cYYsD">Discord</a>
+            </li>
+            <li>
+                <a href="https://pzservers.com/s/traumascl-chile-semi-rol-pvp">Votar por el servidor</a>
+            </li>
+            <li>
+                <a href="https://youtu.be/xSTfYUYksZg?si=M2ALU__Df7V0Ziq_">Evento [Proximamente]</a>
+            </li>
+        </ul>
+    </section>
 
     <!-- Imágenes abajo de todo -->
     <section>
         <img src="https://wallpapercave.com/dwp1x/wp10754978.jpg" width="600" height="150">
     </section>
-<!-- Aqui esta la especie de licencia -->
+
+    <!-- Aqui esta la especie de licencia -->
     <footer>
         <p>&copy; 2024 Project Zomboid Server TraumaSCL</p>
     </footer>
+
+    <!-- Video de fondo centrado -->
+    <video id="video-background" autoplay muted loop>
+        <!-- Cambia "ruta/del/video.mp4" por la ruta de tu video -->
+        <source src="C:\Users\JAVIER ZENTENO\Documents\paginas\pagina bienvenida/Project Zomboid Video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
 </body>
 </html>
